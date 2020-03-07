@@ -1,0 +1,241 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3, p {
+    color: #1a3c58;
+    text-align: center;
+}
+
+.contenedor {
+    padding: 80px 0px;
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    height: 700px;
+    width: 100%;
+    position: relative;
+    background: #4ecdc4; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4ecdc4, #556270); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4ecdc4, #556270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.menu-header {
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    border-radius: 100%;
+    align-items: center;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+    display: flex;
+    z-index: 20;
+    transform: scale(1);
+    transition: transform .2s;
+    animation: escalar .5s 3 alternate;
+}
+
+.enlaces-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #4ecdc4; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4ecdc4, #556270); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4ecdc4, #556270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 20;
+    clip-path: circle(0% at 50% 50%);
+    transition: clip-path 0.6s;
+    z-index: 10;
+}
+
+.extra-clase {
+    clip-path: circle(150% at 50% 50%);   
+}
+
+.enlaces-header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.enlaces-header a:hover {
+    text-decoration: underline;
+}
+
+.menu-header:active {
+    transform: scale(0.9);
+}
+
+@keyframes escalar {
+    0% {
+        transform: scale(0.1);
+    }
+
+    50% {
+        transform: scale(0.6);
+    }
+}
+
+/* Contenido Header */
+
+.contenido-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 550px;
+    margin: auto;
+    color: #fff;
+    
+}
+
+.contenido-header .textos-header {
+    width: 50%;
+}
+
+.contenido-header h1 {
+    font-size: 60px;
+}
+
+.textos-header>a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0px solid #fff;
+    border-radius: 5px;
+    font-weight: 300;
+    margin-top: 20px;
+    padding: 5px 2px;
+    width: 120px;
+    text-align: center;
+} 
+
+.contenido-header .img-header {
+    width: 50%;
+}
+
+.img-header img {
+    width: 100%;
+}
+
+.wave-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    height: 150px;
+    width: 100%;
+}
+
+/* Acerca de: */
+
+.acerca-de {
+    padding-top: 40px;
+}
+
+.contenedor-acerca-de {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.card-acerca {
+    background-color: rgb(211, 211, 211);
+    width: 30%;
+    border-radius: 3px;
+    padding: 20px 10px;
+    margin-top: 40px;
+}
+
+.card-acerca i {
+    display: block;
+    font-size: 65px;
+    color: #1a3c58;
+    margin-bottom: 15px;
+}
+
+.card-acerca h4 {
+    margin-bottom: 10px;
+}
+
+.card-acerca p {
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: #1a3c58;
+}
+
+/* Servicios */
+
+.servicio-cont {
+    background-color: rgb(209, 209, 209) ;
+}
+
+.servicio {
+    padding: 80px 0px;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.img-servicio {
+    width: 50%;
+}
+
+.img-servicio .img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.servicio .contenido-servicio ul li {
+    list-style: none;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    color: #1a3c58;
+}
+
+.contenido-servicio {
+    width: 50%;
+    padding-left: 225px;
+}
+
+.contenido-servicio h3 {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contenido-servicio p {
+    text-align: justify;
+    margin-bottom: 40px;
+    width: 90%;
+    color: #2d6694;
+
+}
